@@ -8,7 +8,7 @@ const BLOG = {
   IS_REVALIDATE: true,   // 开启按需生成模式，节省 CPU 资源
 
   API_BASE_URL: process.env.API_BASE_URL || 'https://www.notion.so/api/v3',
-  NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '28a5ff48c70180439198e6273598f0dd12345,en:28a5ff48c70180439198e6273598f0dd12345',
+  NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '2d55ff48c701817e9663f8559c642cc2,en:2d55ff48c701817e9663f8559c642cc2',
   THEME: process.env.NEXT_PUBLIC_THEME || 'simple',
   LANG: process.env.NEXT_PUBLIC_LANG || 'zh-CN',
   SINCE: process.env.NEXT_PUBLIC_SINCE || 2021,
