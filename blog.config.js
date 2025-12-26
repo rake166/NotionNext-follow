@@ -72,3 +72,7 @@ const BLOG = {
 }
 
 module.exports = BLOG
+// 强制只预生成 5 篇文章，剩下的让它动态生成
+PREVIEW_POST_COUNT: 10, 
+// 开启增量生成模式
+IS_REVALIDATE: true,
