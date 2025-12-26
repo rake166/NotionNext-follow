@@ -1,9 +1,9 @@
 // 注: process.env.XX是Vercel的环境变量
 
 const BLOG = {
-  // --- 这里的两行是关键，必须在大括号内部 ---
-  PREVIEW_POST_COUNT: 5, // 仅预生成 5 篇文章
-  IS_REVALIDATE: true,   // 开启增量更新
+  // --- 这里的两行是强制“快速构建”的关键，必须放在 const BLOG = { 之后 ---
+  PREVIEW_POST_COUNT: 5, // 只预生成 5 篇文章，绕过报错文章
+  IS_REVALIDATE: true,   // 开启按需生成模式，节省 CPU 资源
 
   API_BASE_URL: process.env.API_BASE_URL || 'https://www.notion.so/api/v3',
   NOTION_PAGE_ID: process.env.NOTION_PAGE_ID || '02ab3b8678004aa69e9e415905ef32a5,en:7c1d570661754c8fbc568e00a01fd70e',
